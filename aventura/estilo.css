@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Londrina+Solid:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Londrina Solid', sans-serif;
+}
+
+
+/* Estilos para la sección de inicio */
+
+.inicio {
+    height: 100vh;
+    position: relative;
+}
+
+.inicio .fondo-cielo {
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    background: linear-gradient(rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1)), url(img/cielo.png);
+    background-size: cover;
+    z-index: -10;
+}
+
+.inicio .fondo-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 110%;
+    background: url(img/inicio1.png) center bottom/cover;
+    z-index: 5;
+}
+
+.inicio .contenido-seccion {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 100;
+}
+
+.inicio header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.inicio header nav a {
+    text-decoration: none;
+    color: #334755;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.inicio header nav a i {
+    font-size: 30px;
+}
+
+.titulo {
+    font-family: 'Finger Paint', cursive;
+    font-size: 12rem;
+    color: #334755;
+    text-align: center;
+    position: relative;
+}
+
+
+/* Estilos para la sección de Tours */
+
+.Tours {
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    margin-top: 100px;
+}
+
+.Tours h2 {
+    color: #334755;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.Tours p {
+    color: #666;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.Tours .fila {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.Tours .fila .col {
+    width: 30%;
+}
+
+.Tours .fila i {
+    font-size: 35px;
+    color: #334755;
+}
+
+.Tours .fila p {
+    color: #666;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+
+/* Estilos para la sección de información */
+
+.info {
+    position: relative;
+}
+
+.info img {
+    width: 70%;
+    max-width: 100%;
+}
+
+.info .texto {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+    border: 2px solid #334755;
+    padding: 30px;
+}
+
+.info .texto p {
+    color: #666;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.info .texto button {
+    background-color: #fff;
+    border: 2px solid #334755;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+
+/* Estilos para la sección de descubrir */
+
+.descubrir {
+    text-align: center;
+    padding: 50px;
+}
+
+.descubrir p {
+    color: #666;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+.descubrir button {
+    background-color: #fff;
+    border: 2px solid #334755;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+
+/* Estilos para la sección de subscribirse */
+
+.subscribase {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.subscribase input {
+    display: inline-block;
+    margin-top: 20px;
+    width: 400px;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #334755;
+    text-align: center;
+}
+
+
+/* Estilos para la sección de es ahora */
+
+.esahora {
+    background: url(img/esahora.png) center/cover;
+    height: 100vh;
+}
+
+.esahora .redes a {
+    text-decoration: none;
+    font-size: 40px;
+    color: #18385c;
+    margin: 0 30px;
+}
+
+.esahora .color {
+    color: #18385c;
+}

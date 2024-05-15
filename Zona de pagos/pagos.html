@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <base href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./CSS/pago.css">
+</head>
+<body>
+    <app-root ng-version="01.01.01">
+        <router-outlet></router-outlet>
+        <app-basicforms _nghost-xoy-c9="">
+            <app-spinner _ngcontent-xoy-c9="" _nghost-xoy-c7=""></app-spinner>
+            <div _ngcontent-xoy-c9="">
+                <div class="pmz_enca_supe">
+                    <div class="pmz_enca_conte">
+                        <div class="pmz_enca_logo_clien">
+                            <div class="pmz_logo_banco"></div>
+                        </div>
+                        <div class="pmz_enca_datos_bienve">
+                            <div class="pmz_datos_pago_seguro">
+                                <div class="pmz_espacio_candado">
+                                    <span class="pmz_candado"></span>&nbsp;
+                                    <span class="pmz_paga_segu" id="Encabezado_Encabezado_ctl00_LblPagoSeg">Tus Datos</span>
+                                </div>
+                                <div class="pmz_paga_seg"></div>
+                                <div class="pmz_logo_zona_enca"></div>
+                            </div>
+                            <div class="pmz_bienvenido_cliente">
+                                <div class="pmz_texto_bienvenido">
+                                    <span class="pmz_negro">
+                                        <span class="texto_valor_total control-label" id="Encabezado_Encabezado_ctl00_lblNombreE">Bienvenido(a)</span>
+                                    </span>&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pmz_general">
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <a href="../Targeta/targeta.html" class="btn btn-block movilFooter">Pago con tarjeta</a>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+
+                    <div class="pmz_principal_bancos">
+                        <div class="pmz_proceso_tres" id="divProceso">
+                            <div class="pmz_procesos_pago1">
+                                <span class="pmz_proceso_inactivo" id="spFormulario">
+                                    <span class="control-label" id="MediosPago_MediosPago_ctl00_lblFormulario">Tus Datos</span>
+                                </span>
+                            </div>
+                            <div class="pmz_procesos_pago2">
+                                <span class="pmz_proceso_inactivo" id="spVerificaCompletaDatos">
+                                    <span class="control-label" id="MediosPago_MediosPago_ctl00_lblSeleccionaMedioPago">Selecciona el medio de pago</span>
+                                    <span class="control-label" id="MediosPago_MediosPago_ctl00_lblVerificaCompletaDatos">Verifica y completa los datos</span>
+                                </span>
+                            </div>
+                            <div class="pmz_procesos_pago3">
+                                <span class="pmz_proceso_inactivo" id="spConfirmaPago">
+                                    <span class="control-label" id="MediosPago_MediosPago_ctl00_lblConfirmaPago">Confirma tu pago</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pmz_enca_logo_comercio">
+                        <img class="img-rounded" id="MediosPago_MediosPago_ctl00_ImgEncabezado" src="https://www.zarla.com/images/zarla-escpate-1x1-2400x2400-20210603-pdgb4mmp4ghqyfwxm437.png?crop=1:1,smart&width=250&dpr=2">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <label class="col-sm-4 pmz_normal" for="tipo_id_cliente">Tipo Identificación</label>
+                                <div class="col-sm-8">
+                                    <select class="pmz_campo_desple" id="tipo_id_cliente" name="tipo_id_cliente">
+                                        <option value="-1">*****Seleccione*****</option>
+                                        <option value="1">CC Cedula de Ciudadanía</option>
+                                        <option value="2">CE Cedula de Extranjería</option>
+                                        <option value="3">NIT Nit Empresa</option>
+                                        <option value="4">NUIP Número Único de Identificación</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <label class="col-sm-4 pmz_normal" for="id_cliente">Doc Identidad</label>
+                                <div class="col-sm-8">
+                                    <input class="pmz_campo_desple" id="id_cliente" required="true" name="id_cliente" title="Doc Identidad" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-10">
+                          <div class="form-group">
+                              <label class="col-sm-4 pmz_normal" for="descrip_pago">Concepto</label>
+                              <div class="col-sm-8">
+                                  <input class="pmz_campo_desple" id="descrip_pago" required="true" name="descrip_pago" title="Concepto" type="text">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-10">
+                          <div class="form-group">
+                              <label class="col-sm-4 pmz_normal" for="total_con_iva">Total a pagar</label>
+                              <div class="col-sm-8">
+                                  <input class="pmz_campo_desple" id="total_con_iva" required="true" name="total_con_iva" title="Total a pagar" type="text">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-10">
+                          <div class="form-group">
+                              <label class="col-sm-4 pmz_normal" for="nombre_cliente">Nombre Completo</label>
+                              <div class="col-sm-8">
+                                  <input class="pmz_campo_desple" id="nombre_cliente" required="true" name="nombre_cliente" title="Nombre Completo" type="text">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-10">
+                          <div class="form-group">
+                              <label class="col-sm-4 pmz_normal" for="txtemail">Correo</label>
+                              <div class="col-sm-8">
+                                  <input class="pmz_campo_desple" id="txtemail" required="true" name="txtemail" title="Correo" type="text">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-10">
+                          <div class="form-group">
+                              <label class="col-sm-4 pmz_normal" for="telefono_cliente">Teléfono</label>
+                              <div class="col-sm-8">
+                                  <input class="pmz_campo_desple" id="telefono_cliente" required="true" name="telefono_cliente" title="Teléfono" type="text">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-block movilFooter">Aceptar</button>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </app-basicforms>
+        <app-footer _ngcontent-xoy-c9="" _nghost-xoy-c8="">
+            <footer _ngcontent-xoy-c8="">
+                <div _ngcontent-xoy-c8="">
+                    <div class="pmz_div_gnral">
+                        Si tienes dudas o alguna novedad con tu transacción, comunícate a
+                        <strong>admin@hotmail.com</strong> o llama al
+                        <strong>3169279278</strong>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="pmz_piepag_gnral">
+                        <div class="pmz_logo_zona_banco">&nbsp;</div>
+                    </div>
+                </div>
+            </footer>
+        </app-footer>
+    </app-root>
+    <script src="main.js" defer=""></script>
+</body>
+</html>
+

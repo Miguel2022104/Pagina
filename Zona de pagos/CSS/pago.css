@@ -1,0 +1,123 @@
+/* pago.css */
+
+/* General body style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.pmz_enca_supe {
+    background-color: #ff6f61; /* Vibrant coral */
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pmz_enca_conte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pmz_logo_banco {
+    background-image: url('https://www.zarla.com/images/zarla-escpate-1x1-2400x2400-20210603-pdgb4mmp4ghqyfwxm437.png?crop=1:1,smart&width=250&dpr=2'); /* Replace with your logo path */
+    background-size: cover;
+    width: 100px;
+    height: 50px;
+}
+
+.pmz_enca_datos_bienve {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.pmz_candado {
+    background-image: url('https://www.zarla.com/images/zarla-escpate-1x1-2400x2400-20210603-pdgb4mmp4ghqyfwxm437.png?crop=1:1,smart&width=250&dpr=2'); /* Replace with lock icon path */
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+/* Form steps styles */
+.pmz_proceso_tres {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.pmz_proceso_inactivo {
+    color: #ffffff;
+    background-color: #ff6f61;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form container */
+.pmz_general {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #333;
+    font-weight: bold;
+}
+
+.pmz_campo_desple {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff6f61;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit button */
+.btn {
+    background-color: #ff6f61;
+    color: #ffffff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff8f81;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
